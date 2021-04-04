@@ -24,6 +24,9 @@ const Counter = () => {
         <button onClick={() => dispatch(Increase())}>Increase one</button>
         <button onClick={() => dispatch(Decrease())}>Decrease one</button>
         <button onClick={() => dispatch(Reset())}>Reset</button>
+        <button onClick={() => dispatch(Increase())}>Increase one</button>
+        <button onClick={() => dispatch(Decrease())}>Decrease one</button>
+        <button onClick={() => dispatch(Reset())}>Reset</button>
       </div>
     </div>
   );
