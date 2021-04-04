@@ -6,11 +6,6 @@ import Wrapper from "./Container/Counter";
 function App() {
   return (
     <div className="App">
-      <h2>First Counter</h2>
-      <Wrapper />
-      <h3>This is Second Counter</h3>
-      <Wrapper />
-      <h4>Third Counter </h4>
       <Wrapper />
     </div>
   );
