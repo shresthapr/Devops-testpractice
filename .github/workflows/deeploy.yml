@@ -24,14 +24,16 @@ jobs:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access 
              - uses: actions/checkout@main
              - uses: actions/setup-node@main
-                with: 
+               with: 
                   node-version: 14
-              - run: npm ci
-              - run: npm run build
-              - uses: w9jds/firebase-action@main
-                with:
-                  args: deploy --only hosting
-                env:
+        
+             - run: npm ci
+             - run: npm run build
+             
+             - uses: w9jds/firebase-action@main
+               with:
+                args: deploy --only hosting
+               env:
                 FIREBASE_HOST: ${{secrets.FIREBASE_HOST}}
 
 
